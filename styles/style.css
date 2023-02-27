@@ -1,6 +1,5 @@
 @import url(./reset.css);
 
-/* defaults */
 h1, h2, h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-bottom: 0em;
@@ -17,17 +16,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.0em;
-}
-
-p {
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
-    line-height: 1.4em;
-    margin-bottom: 1em; */
 }
 
-/* layout */
 body {
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -76,7 +67,7 @@ header img {
 }
 
 #main-nav>ul>li>a:hover {
-    background-color: #0e610e;
+    background-color: #000000;
 }
 
 main {
@@ -99,7 +90,6 @@ main img {
 footer {
     width: 1280px;
     grid-area: footer;
-    /* background-color: #ffbe45; */
     text-align: center;
 }
 
@@ -117,7 +107,6 @@ footer>p {
     margin-top: 20px;
 }
 
-
 #aside-1 {
     grid-area: aside1;
     background-image: url(../coffee.jpeg);
@@ -129,19 +118,15 @@ footer>p {
     margin-top: 20px;
 }
 
-/* Aside Styles */
 #aside-1 img {
-    /* border-right: 2px solid #333; */
     width: 300px;
     margin-left: 120px;
     float: right;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 1.7em;
 }
 
-#aside-1 h2,
-h3 {
-    /* background-color: #ffbe45; */
+#aside-1 h2, h3 {
     padding: 2 em;
     margin-top: 80px;
     color: rgb(255, 255, 255);
