@@ -1,0 +1,154 @@
+@import url(./reset.css);
+
+/* defaults */
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0em;
+}
+
+h1 {
+    font-size: 3.4em;
+}
+
+h2 {
+    font-size: 2.1em;
+    text-decoration: white;
+    text-decoration: solid;
+}
+
+h3 {
+    font-size: 1.0em;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+/* layout */
+body {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas:
+        "header header header"
+        "aside1 main main"
+        "footer footer footer";
+    gap: 1em;
+    justify-content: center;
+    max-width: 1200px;
+    margin-left: 120px;
+}
+
+header {
+    grid-area: header;
+}
+
+header img {
+    margin-bottom: -5px;
+}
+
+#main-nav {
+    width: 103.9%;
+    background-color: #283557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+
+#main-nav>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#main-nav>ul>li>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: #bebebe;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.25s;
+    width: 380px;
+}
+
+#main-nav>ul>li>a:hover {
+    background-color: #0e610e;
+}
+
+main {
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 160%;
+}
+
+main img {
+    height: 100px;
+    margin-right: 15px;
+    margin-top: 22px;
+}
+
+main>p {
+    display: flex;
+    align-items: right;
+}
+
+footer {
+    width: 1280px;
+    grid-area: footer;
+    /* background-color: #ffbe45; */
+    text-align: center;
+}
+
+footer>img {
+    height: 100px;
+    width: 1270px;
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+footer>p {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+
+#aside-1 {
+    grid-area: aside1;
+    background-image: url(../coffee.jpeg);
+    background-position: center;
+    background-size: 500px;
+    vertical-align: middle;
+    width: 285px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+/* Aside Styles */
+#aside-1 img {
+    /* border-right: 2px solid #333; */
+    width: 300px;
+    margin-left: 120px;
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 1.7em;
+}
+
+
+
+#aside-1 h2,
+h3 {
+    /* background-color: #ffbe45; */
+    padding: 2 em;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+
+}
